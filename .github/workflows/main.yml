@@ -1,4 +1,4 @@
-name: Unzip Mbatsani
+name: Unzip Mbatsane
 
 on: [push]
 
@@ -11,7 +11,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Unzip folder
-      run: unzip Mbatsani.zip -d .
+      run: unzip Mbatsane.zip -d .
 
     - name: List files
       run: ls -la
