@@ -1,6 +1,6 @@
 name: Unzip Mbatsani
 
-on: [push]
+on: [push]                                    
 
 jobs:
     unzip:
@@ -8,8 +8,8 @@ jobs:
 
 
           steps:
-           - name: Checkpoin repository
+           - name: Checkout repository
              uses: actions/checkout@v2
 
-            - name: Unzip folder
-            run: unzip Mbatsani.zip -d .
+           - name: Unzip folder
+             run: unzip Mbatsani.zip -d .
